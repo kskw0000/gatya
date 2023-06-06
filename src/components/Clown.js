@@ -10,9 +10,9 @@ const Clown = () => {
   const [spinning, setSpinning] = useState(false);
   const [hit, setHit] = useState(false);
 
+  useEffect(() => {
   const gachaSound = new Audio('/gachaSound.mp3'); // 音声ファイルのパスを修正してください。
 
-  useEffect(() => {
     if (spinning) {
       gachaSound.play();
 
