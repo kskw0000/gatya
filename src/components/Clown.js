@@ -52,7 +52,7 @@ const Clown = () => {
         {spinning ? '何が出るかな...' : '回してね!'}
       </Button>
 
-      {hit && 
+      {hit && (
         <Button 
         variant="contained" 
         color="secondary" 
@@ -60,11 +60,12 @@ const Clown = () => {
         sx={{ borderRadius: '25px' }}
         >         
         次へ進む
-        </Button>      
-      }
+        </Button>
+      
+      )}
 {!hit && currentClown && <h1 style={{ color: 'blue' }}>はずれ😢</h1>}
   </div>
  );
-}
+ }
 
 export default Clown;
